@@ -1,0 +1,52 @@
+<div class="container">
+<h2>Modifier les informations de {{etudiantCourant.nom}} {{etudiantCourant.nom}} </h2>
+<form #employeeForm="ngForm" (ngSubmit)="modifEtudiant()">
+<mat-form-field class="col-sm-4 col-md-4 col-lg-4">
+  <mat-label>CIN</mat-label>
+  <input matInput type="number" [(ngModel)]="etudiantCourant.id" name="cin">
+</mat-form-field>
+<br>
+<mat-form-field class="col-sm-4 col-md-4 col-lg-4">
+  <mat-label>Nom</mat-label>
+  <input matInput type="text" [(ngModel)]="etudiantCourant.nom" name="nom">
+</mat-form-field>
+<br>
+
+<mat-form-field class="col-sm-4 col-md-4 col-lg-4">
+  <mat-label>Prénom</mat-label>
+  
+  <input matInput type="text" [(ngModel)]="etudiantCourant.prenom" name="prenom">
+</mat-form-field>
+<br>
+
+<mat-form-field class="col-sm-4 col-md-4 col-lg-4">
+  <mat-label>Date de naissance  
+   </mat-label>
+  <input matInput [matDatepicker]="picker" [(ngModel)]="etudiantCourant.dateNaiss" name="dateNaissance">
+  <mat-datepicker-toggle matSuffix [for]="picker" ></mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+</mat-form-field><br>
+
+
+
+<mat-form-field class="col-sm-4 col-md-4 col-lg-4">
+  <mat-label>Moyenne</mat-label>
+  <input matInput type="number" [(ngModel)]="etudiantCourant.moy" name="moyenne">
+</mat-form-field><br>
+
+<mat-form-field class="col-sm-4 col-md-4 col-lg-4">
+  <mat-label>Groupe</mat-label>
+  <mat-select [(ngModel)]="etudiantCourant.grp.nomGrp" name="nomGrp">
+  <div *ngFor="let g of groups">
+    <mat-option  [value]="g.nomGrp">
+      {{ g.nomGrp }}
+    </mat-option>
+    </div>
+  </mat-select>
+</mat-form-field><br>
+  
+<div class="mt-8">
+  <button mat-raised-button type="submit"  color="primary">Modifier</button>
+</div>
+</form>
+</div>

@@ -1,0 +1,27 @@
+
+<mat-sidenav-container>
+  
+<p>
+  <mat-toolbar style="background-color: #0a4275;">
+   <button mat-icon-button [matMenuTriggerFor]="menu" class="example-icon" aria-label="Example icon-button with menu icon">
+  <mat-icon>menu</mat-icon>
+</button>
+
+<mat-menu #menu="matMenu" >
+
+  <button mat-menu-item routerLink="/etudiants">Etudiants</button>
+  <button mat-menu-item routerLink="/add-etudiant">Ajouter Etudiants</button>
+    <button mat-menu-item routerLink="/search-etudiant">Recherche Etudiant</button>
+ 
+</mat-menu>
+
+    <span>My App</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>share</mat-icon>
+    </button>
+  </mat-toolbar>
+</p>

@@ -1,0 +1,48 @@
+<div class="container">
+<h2>Ajouter un étudiant</h2>
+<form >
+<mat-form-field class="col-sm-4 col-md-4 col-lg-4">
+  <mat-label>CIN</mat-label>
+  <input matInput type="number" [(ngModel)]="newEtu.id" name="cin">
+</mat-form-field>
+<br>
+<mat-form-field class="col-sm-4 col-md-4 col-lg-4">
+  <mat-label>Nom</mat-label>
+  <input matInput type="text" [(ngModel)]="newEtu.nom" name="nomm">
+</mat-form-field>
+<br>
+
+<mat-form-field class="col-sm-4 col-md-4 col-lg-4">
+  <mat-label>Prénom</mat-label>
+  
+  <input matInput type="text" [(ngModel)]="newEtu.prenom" name="prenom">
+</mat-form-field>
+<br>
+
+<mat-form-field class="col-sm-4 col-md-4 col-lg-4">
+  <mat-label>Date de naissance  
+   </mat-label>
+  <input matInput [matDatepicker]="picker" [(ngModel)]="newEtu.dateNaiss" name="dateNaissance">
+  <mat-datepicker-toggle matSuffix [for]="picker" ></mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+</mat-form-field><br>
+
+
+
+<mat-form-field class="col-sm-4 col-md-4 col-lg-4">
+  <mat-label>Moyenne</mat-label>
+  <input matInput type="number" [(ngModel)]="newEtu.moy" name="moyenne">
+</mat-form-field><br>
+<mat-form-field class="col-sm-4 col-md-4 col-lg-4">
+  <mat-label>Groupe</mat-label>
+  <mat-select [(ngModel)]="newGrp" name="nom">
+    <mat-option *ngFor="let g of groups" [value]="g">
+      {{ g.nomGrp }}
+    </mat-option>
+  </mat-select>
+</mat-form-field><br>
+<div class="mt-8">
+  <button mat-raised-button type="submit" (click)="ajouterEtudiant()" color="primary">Ajouter</button>
+</div>
+
+</form>

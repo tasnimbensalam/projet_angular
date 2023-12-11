@@ -1,0 +1,100 @@
+{
+  "tab_etu": [
+    {
+      "id": 2,
+      "nom": "Ben Hamda",
+      "prenom": "Samira",
+      "dateNaiss": "2002-11-04",
+      "moy": 10,
+      "absenceCount": 0,
+      "isEliminated": false,
+      "grp": {
+        "id": 5,
+        "nomGrp": "RSI21",
+        "parcours": "Systèmes Embarqués et Mobiles"
+      }
+    },
+    {
+      "id": 3,
+      "nom": "Zaier",
+      "prenom": "Manel",
+      "dateNaiss": "2001-02-15",
+      "moy": 12,
+      "absenceCount": 0,
+      "isEliminated": false,
+      "grp": {
+        "id": 1,
+        "nomGrp": "RSI21",
+        "parcours": "Développement des Systèmes d'Information"
+      }
+    },
+    {
+      "id": 7,
+      "nom": "Zaier",
+      "prenom": "Manel",
+      "dateNaiss": "2001-02-15",
+      "moy": 12,
+      "absenceCount": 0,
+      "isEliminated": false,
+      "grp": {
+        "id": 1,
+        "nomGrp": "RSI21",
+        "parcours": "Développement des Systèmes d'Information"
+      }
+    },
+    {
+      "id": 19,
+      "nom": "Zaier",
+      "prenom": "Manel",
+      "dateNaiss": "2001-02-15",
+      "moy": 12,
+      "absenceCount": 0,
+      "isEliminated": false,
+      "grp": {
+        "id": 1,
+        "nomGrp": "RSI21",
+        "parcours": "Développement des Systèmes d'Information"
+      }
+    },
+    {
+      "id": 15122,
+      "nom": "fdkbcg",
+      "prenom": "ddbhgb",
+      "dateNaiss": "2023-12-21T23:00:00.000Z",
+      "moy": 14,
+      "absenceCount": 0,
+      "grp": {
+        "id": 1,
+        "nomGrp": "RSI21",
+        "parcours": "Développement des Systèmes d'Information"
+      }
+    }
+  ],
+  "tab_grp": [
+    {
+      "id": 1,
+      "nomGrp": "DSI21",
+      "parcours": "Développement des Systèmes d'Information"
+    },
+    {
+      "id": 2,
+      "nomGrp": "DSI22",
+      "parcours": "Développement des Systèmes d'Information"
+    },
+    {
+      "id": 3,
+      "nomGrp": "DSI23",
+      "parcours": "Développement des Systèmes d'Information"
+    },
+    {
+      "id": 4,
+      "nomGrp": "RSI21",
+      "parcours": "Réseaux et Systèmes Informatiques"
+    },
+    {
+      "id": 5,
+      "nomGrp": "SEM21",
+      "parcours": "Systèmes Embarqués et Mobiles"
+    }
+  ]
+}

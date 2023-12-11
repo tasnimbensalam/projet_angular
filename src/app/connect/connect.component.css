@@ -1,0 +1,12 @@
+.text-center {
+    text-align: "center";
+    }
+    
+      .password-icon1 {
+        margin-left: 120px; /* Adjust the value as needed for the desired spacing */
+      }
+      .text-err {
+        color: red;
+        font-weight: 12px;
+        font-style: italic;
+        }

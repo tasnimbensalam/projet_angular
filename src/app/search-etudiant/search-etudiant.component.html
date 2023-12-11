@@ -1,0 +1,27 @@
+<!-- search-etudiant.component.html -->
+
+<form name="f2" class="form-inline">
+  <div class="form-group mx-sm-3 mb-2 mt-2">
+    <label>Nom à chercher</label>
+    <input type="text" class="form-control" name="nom" #nomEtu (keyup)="chercherParNom(nomEtu.value)">
+  </div>
+</form>
+
+<table class="table table-bordered mt-3">
+  <thead>
+    <tr>
+      <th>CIN</th>
+      <th>Nom</th>
+      <th>Prénom</th>
+      <th>Moyenne</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let e of list_etu">
+      <td>{{ e.id}}</td>
+      <td [ngStyle]="lesserThan(e.moy)? redoubleStyle : null">{{ e.nom }}</td>
+      <td>{{ e.prenom }}</td>
+      <td>{{ e.moy }}</td>
+    </tr>
+  </tbody>
+</table>
